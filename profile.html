@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Детали профиля</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220917194437">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header data-scroll="87" data-scroll-show="500" class="header">
+			<div class="header__container">
+				<div class="header__content">
+					<div class="header__column">
+						<a href="../index.html" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+						<div class="header__menu menu" data-da=".header__container, 991.98, 2">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item"><a href="../catalog.html" class="menu__link">Каталог</a></li>
+									<li class="menu__item"><a href="../news.html" class="menu__link">Новости</a></li>
+									<li class="menu__item"><a href="../order.html" class="menu__link">Доставка</a></li>
+									<li class="menu__item"><a href="../about.html" class="menu__link">О нас</a></li>
+									<li class="menu__item"><a href="../about.html" class="menu__link">Контакты</a></li>
+								</ul>
+							</nav>
+							<button type="button" class="menu__icon">
+								<div class="icon-menu">
+									<div class="icon-menu__line"><span></span></div>
+									<div class="icon-menu__line"><span></span></div>
+									<div class="icon-menu__line"><span></span></div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div class="header__info info-header">
+						<div class="info-header__items">
+							<a href="../wish.html" class="info-header__item info-header__item_like"><img src="img/icons/like.svg" alt="like"></a>
+							<a href="../profile.html" class="info-header__item"><img src="img/icons/user.svg" alt="user"></a>
+							<a href="../basket.html" class="info-header__item"><img src="img/icons/shopping-cart.svg" alt="shopping cart"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section id="top-block" class="private-office">
+				<div class="private-office__container">
+					<h1 class="private-office__title">Личный кабинет</h1>
+					<div class="private-office__body">
+						<aside class="private-office__sidebar sidebar-private-office">
+							<div class="sidebar-private-office__items">
+								<a href="profile.html" class="sidebar-private-office__button button"><img src="img/icons/user-white.svg" alt="">Детали профиля</a>
+								<a href="orders.html" class="sidebar-private-office__button button button_green"><img src="img/icons/cart-white.svg" alt="">Заказы</a>
+								<a href="wish.html" class="sidebar-private-office__button button button_green"><img src="img/icons/heart-white.svg" alt="">Список желаемого</a>
+								<button class="sidebar-private-office__exit _icon-exit">Выйти</button>
+							</div>
+						</aside>
+						<div class="private-office__content user-info">
+							<div class="user-info__header header-user-info">
+								<div class="header-user-info__image"><picture><source srcset="img/profile/user.webp" type="image/webp"><img src="img/profile/user.jpg" alt="user"></picture></div>
+								<div class="header-user-info__content">
+									<div class="header-user-info__text">Добрый день</div>
+									<div class="header-user-info__name">Иван Иванов</div>
+									<input hidden autocomplete="off" id="add-image" type="file" name="form[]" data-error="Ошибка" accept="image/png,image/jpeg" class="header-user-info__input">
+									<label class="header-user-info__lable" for="add-image"><img src="img/icons/download.svg" alt="download"> Загрузить фото <span>(jpeg, png)</span></label>
+								</div>
+							</div>
+							<form action="" method="POST" class="user-info__form form-user-info">
+								<div class="form-user-info__item">
+									<div class="form-user-info__body">
+										<input data-placeholder-nohide value="" autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Номер телфона" class="form-user-info__input input-common">
+										<input data-placeholder-nohide autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="E-mail" class="form-user-info__input input-common">
+										<input data-placeholder-nohide value="Украина" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Страна" class="form-user-info__input input-common">
+										<input data-placeholder-nohide value="Днепр" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Город" class="form-user-info__input input-common">
+										<input data-placeholder-nohide value="ул. Шевченка" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Адрес" class="form-user-info__input input-common">
+									</div>
+								</div>
+								<div class="form-user-info__item">
+									<h3 class="form-user-info__subtitle">Пароль</h3>
+									<div class="form-user-info__body">
+										<div class="form-user-info__line">
+											<input autocomplete="off" type="password" name="form[]" value="1234567891012140">
+											<button class="form-user-info__viewpass _icon-eye" type="button"></button>
+										</div>
+										<button type="submit" class="form-user-info__button button button_green">Сменить пароль</button>
+									</div>
+								</div>
+								<div class="form-user-info__item">
+									<h3 class="form-user-info__subtitle">Платежная система</h3>
+									<div class="form-user-info__body">
+										<div class="form-user-info__line">
+											<input id="card" autocomplete="off" type="text" name="form[]" value="" placeholder="Номер карты">
+											<div class="form-user-info__card _icon-card"></div>
+										</div>
+										<div class="form-user-info__card-info">
+											<div class="form-user-info__inp">
+												<label for="date">Дата:</label>
+												<input id="date" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" value="07/24">
+											</div>
+											<div class="form-user-info__inp">
+												<label for="cvv">CVV:</label>
+												<input maxlength="3" id="cvv" autocomplete="off" type="password" name="form[]" data-error="Ошибка" placeholder="" value="123">
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="submit" class="form-user-info__button button">Сохранить</button>
+							</form>
+							<div class="user-info__status">
+								<div class="user-info__button-status user-info__button-status_save _icon-check">Данные сохраненны</div>
+								<div class="user-info__button-status user-info__button-status_no-save _icon-cross">Данные не сохраненны</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__left left-column">
+					<img src="img/logo.svg" alt="logo" class="left-column__logo">
+					<div class="left-column__text">
+						<p>© 2021 “Copper Pro”</p>
+						<p>Все права защищенны</p>
+					</div>
+					<a href="#" class="left-column__link" style="text-decoration: underline;">Политика конфиденциальности</a>
+				</div>
+				<div class="footer__right right-column">
+					<div class="right-column__items">
+						<div class="right-column__item">
+							<h5 class="right-column__title">Навигация</h5>
+							<ul class="right-column__list list-column">
+								<li class="list-column__link"><a href="../catalog.html">Каталог</a></li>
+								<li class="list-column__link"><a href="../news.html">Новости</a></li>
+								<li class="list-column__link"><a href="../order.html">Доставка</a></li>
+								<li class="list-column__link"><a href="../about.html">О нас</a></li>
+								<li class="list-column__link"><a href="../about.html">Контакты</a></li>
+							</ul>
+						</div>
+						<div data-da=".right-column__items,541.98,3" class="right-column__item">
+							<h5 class="right-column__title">Каталог</h5>
+							<ul class="right-column__list list-column">
+								<li class="list-column__link"><a href="../product.html">Для эфирных масел</a></li>
+								<li class="list-column__link"><a href="../product.html">Для гидролатов</a></li>
+								<li class="list-column__link"><a href="../product.html">Медная посуда</a></li>
+								<li class="list-column__link"><a href="../product.html">Аксессуары из меди</a></li>
+								<li class="list-column__link"><a href="../product.html">Индивидуальный заказ</a></li>
+								<li class="list-column__link"><a href="../product.html">Скидки и предложения</a></li>
+							</ul>
+						</div>
+						<div class="right-column__item">
+							<h5 class="right-column__title">Контакты</h5>
+							<ul class="right-column__list list-column">
+								<li class="list-column__link" style="max-width: 132px;"><a href="#">Бажана 8-Б, Киев, 02132 Украина</a></li>
+								<li class="list-column__link"><a href="tel:+380969906756">+38 (096) 990 67 56</a></li>
+								<li class="list-column__link"><a href="#">a.alambik@gmail.com</a></li>
+							</ul>
+							<div class="right-column__social social-items">
+								<a href="twitter.com" class="social-items__item _icon-twitter"></a>
+								<a href="facebook.com" class="social-items__item _icon-facebook"></a>
+								<a href="instagram.com" class="social-items__item _icon-instagram"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="footer__top-btn button" data-goto="#top-block">ВВЕРХ</button>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20220917194437"></script>
+</body>
+
+</html>

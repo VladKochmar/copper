@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Оформить заказ</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220917194437">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="special-header">
+			<a href="index.html" class="special-header__logo"><img src="img/logo.svg" alt="logo"></a>
+		</header>
+		<main class="page">
+			<section class="order">
+				<div class="order__container">
+					<div class="order__header">
+						<a href="index.html" class="order__back-button button-back-to">Назад на главную</a>
+						<h1 class="order__title title-main">Оформить заказ</h1>
+					</div>
+					<div class="order__body">
+						<div class="order__content">
+							<div class="order__registration registration-order">
+								<div class="registration-order__column">
+									<img src="img/icons/user.svg" alt="user" class="registration-order__user">
+									<div class="registration-order__body">
+										<div class="registration-order__lable">Уже есть аккаунт или хотите зарегистрироваться ?</div>
+										<p class="registration-order__text">Войдите в кабинет и получите скидку </p>
+									</div>
+								</div>
+								<div class="registration-order__buttons">
+									<a href="authorization.html" class="registration-order__button button">Войти</a>
+									<a href="registration.html" class="registration-order__button border-button">Регистрация</a>
+								</div>
+								<img src="img/icons/user-white.svg" alt="user" class="registration-order__bg">
+							</div>
+							<form action="" method="POST" class="order__form form-order">
+								<div class="form-order__item">
+									<div class="form-order__header">
+										<div class="form-order__number">1</div>
+										<h3 class="form-order__subtitle">Личные данные</h3>
+									</div>
+									<div class="form-order__inputs">
+										<input data-placeholder-nohide autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Имя" class="form-order__input input-common">
+										<input data-placeholder-nohide autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Фамилия" class="form-order__input input-common">
+										<input data-placeholder-nohide autocomplete="off" type="tel" name="form[]" data-error="Ошибка" placeholder="Телефон" class="form-order__input input-common">
+										<input data-placeholder-nohide autocomplete="off" type="email" name="form[]" data-error="Ошибка" placeholder="E-mail" class="form-order__input input-common">
+										<input data-placeholder-nohide autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Страна" class="form-order__input input-common">
+										<input data-placeholder-nohide autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Город" class="form-order__input input-common">
+									</div>
+								</div>
+								<div class="form-order__item">
+									<div class="form-order__header">
+										<div class="form-order__number">2</div>
+										<h3 class="form-order__subtitle">Доставка</h3>
+									</div>
+									<div class="form-order__object">
+										<div class="form-order__radio radio">
+											<input id="pickup" checked data-error="Ошибка" class="radio__input" type="radio" value="pickup" name="delivery">
+											<label for="pickup" class="radio__label">Самовывоз</label>
+										</div>
+										<p class="form-order__text">Вы можете забрать из нашего официального магазина по адресу Бажана 8-Б, Киев, 02132 Украина </p>
+									</div>
+									<div class="form-order__object">
+										<div class="form-order__radio radio">
+											<input id="post" data-error="Ошибка" class="radio__input" type="radio" value="post" name="delivery">
+											<label for="post" class="radio__label">Новая почта</label>
+										</div>
+										<p class="form-order__text">Вы можете забрать из нашего официального магазина по адресу Бажана 8-Б, Киев, 02132 Украина </p>
+									</div>
+									<div class="form-order__object">
+										<div class="form-order__radio radio">
+											<input id="courier" data-error="Ошибка" class="radio__input" type="radio" value="courier" name="delivery">
+											<label for="courier" class="radio__label">Курьер “Новая почта”</label>
+										</div>
+										<p class="form-order__text">Вы можете забрать из нашего официального магазина по адресу Бажана 8-Б, Киев, 02132 Украина </p>
+									</div>
+								</div>
+								<div class="form-order__item">
+									<div class="form-order__header">
+										<div class="form-order__number">3</div>
+										<h3 class="form-order__subtitle">Оплата</h3>
+									</div>
+									<div class="form-order__radio radio">
+										<input id="receipt" checked data-error="Ошибка" class="radio__input" type="radio" value="receipt" name="payment">
+										<label for="receipt" class="radio__label">При получении</label>
+									</div>
+									<div class="form-order__radio radio">
+										<input id="online" data-error="Ошибка" class="radio__input" type="radio" value="online" name="payment">
+										<label for="online" class="radio__label">Онлайн-оплата картой</label>
+									</div>
+								</div>
+							</form>
+						</div>
+						<aside class="order__sidebar">
+							<div data-simplebar class="order__products products-order">
+								<div class="products-order__item">
+									<div class="products-order__image"><picture><source srcset="img/home/our-production/image1.webp" type="image/webp"><img src="img/home/our-production/image1.jpg" alt="image"></picture></div>
+									<div class="products-order__name">Дистиллятор для получения гидролата 8л</div>
+									<div class="products-order__block">
+										<div class="products-order__quantity">2 шт.</div>
+										<div class="products-order__value">
+											<div class="products-order__price">1 953 грн</div>
+											<div class="products-order__discount">5 000 грн</div>
+										</div>
+									</div>
+								</div>
+								<div class="products-order__item">
+									<div class="products-order__image"><picture><source srcset="img/home/our-production/image1.webp" type="image/webp"><img src="img/home/our-production/image1.jpg" alt="image"></picture></div>
+									<div class="products-order__name">Дистиллятор для получения гидролата 8л</div>
+									<div class="products-order__block">
+										<div class="products-order__quantity">2 шт.</div>
+										<div class="products-order__value">1 953 грн</div>
+									</div>
+								</div>
+								<div class="products-order__item">
+									<div class="products-order__image"><picture><source srcset="img/home/our-production/image1.webp" type="image/webp"><img src="img/home/our-production/image1.jpg" alt="image"></picture></div>
+									<div class="products-order__name">Дистиллятор для получения гидролата 8л</div>
+									<div class="products-order__block">
+										<div class="products-order__quantity">2 шт.</div>
+										<div class="products-order__value">1 953 грн</div>
+									</div>
+								</div>
+								<div class="products-order__item">
+									<div class="products-order__image"><picture><source srcset="img/home/our-production/image1.webp" type="image/webp"><img src="img/home/our-production/image1.jpg" alt="image"></picture></div>
+									<div class="products-order__name">Дистиллятор для получения гидролата 8л</div>
+									<div class="products-order__block">
+										<div class="products-order__quantity">2 шт.</div>
+										<div class="products-order__value">1 953 грн</div>
+									</div>
+								</div>
+							</div>
+							<div class="order__shadow"></div>
+							<div class="order__total total-basket">
+								<div class="total-basket__top">
+									<div class="total-basket__promo promo">
+										<input data-placeholder-nohide autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Введите промо" class="promo__input input-common">
+										<button type="button" class="promo__button button">Применить</button>
+									</div>
+									<h4 class="total-basket__title">Итого</h4>
+									<div class="total-basket__price">10 953 грн</div>
+								</div>
+								<div class="total-basket__bottom">
+									<div class="total-basket__content">
+										<img src="img/icons/delivery.svg" alt="delivery" class="total-basket__icon">
+										<p class="total-basket__text">У вас бесплатная доставка!</p>
+									</div>
+									<button type="submit" class="total-basket__button button">Оформить заказ</button>
+								</div>
+								<img src="img/icons/big-shopping-cart.svg" alt="big-shopping-cart" class="total-basket__background">
+							</div>
+						</aside>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="special-footer">
+			<a href="index.html" class="special-footer__logo"><img src="img/logo.svg" alt="logo"></a>
+			<div class="special-footer__text">© 2021 “Copper Pro” Все права защищенны</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20220917194437"></script>
+</body>
+
+<style>
+	.total-basket__top {
+		padding: 10px 15px 20px;
+	}
+
+	.simplebar-scrollbar.simplebar-visible::before {
+		opacity: 1;
+	}
+
+	.simplebar-scrollbar::before {
+		left: 0;
+		right: 0;
+		max-width: 5px;
+		background: linear-gradient(95.42deg, #5E3928 -2.56%, #E4A16F 63.17%);
+	}
+
+	.simplebar-track.simplebar-vertical {
+		background: #B3B9B8;
+		border-radius: 50px;
+		max-width: 5px;
+	}
+</style>
+
+</html>
